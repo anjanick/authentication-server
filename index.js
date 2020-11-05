@@ -25,6 +25,7 @@ app.use(cookieParser());
 // 4. Router 
 app.use("/api/users", userRouter);
 
+
 //Server
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
