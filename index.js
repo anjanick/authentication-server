@@ -8,6 +8,8 @@ const app = express();
 
 //import Route - Views 
 const userRouter = require("./api/users/user.view");
+const categoryRouter = require("./api/category/category.view");
+const productRouter = require("./api/product/product.view");
 
 //middlewares 
 // 1. Cross Origin 
@@ -24,6 +26,8 @@ app.use(cookieParser());
 
 // 4. Router 
 app.use("/api/users", userRouter);
+app.use("/api/category", categoryRouter);
+app.use("/api/product", productRouter);
 
 
 //Server
